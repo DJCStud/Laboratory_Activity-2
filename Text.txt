@@ -18,46 +18,12 @@ Class contains the user-defined methods:
 -deposit() depositing money into the student's balance
 -show_balance() displays the student's balance
 
-2.
-
-
-PROGRAM DESIGN EXPLANATION
-
-The program is a Student Enrollment System designed using Object-Oriented Programming.
-The main class is StudentEnrollment, which represents a student managing tuition and cash.
-
-The class contains attributes such as:
-- cash (student's available money)
-- downpayment_paid (status of enrollment requirement)
-- units (number of enrolled units)
-- cost_per_unit (tuition per unit)
-
-The class includes several user-defined methods:
-- enroll() handles downpayment and unit enrollment
-- view_tuition() calculates and displays tuition
-- deposit() adds money to the student's balance
-- show_balance() displays remaining cash
-
-This class structure was chosen because it groups all student-related operations into a single object. It improves organization, readability, and reusability.
-
-USER INPUT AND EXCEPTION HANDLING
-
-The program accepts user input through menu choices and numeric entries.
-Exception handling is implemented using try–except blocks to prevent crashes from invalid inputs such as letters instead of numbers.
+2. The program accepts user input through menu choices and numeric entries. Exception handling is implemented using try–except blocks to prevent crashes from invalid inputs such as letters instead of numbers. Exception handling ensures the program continues running even when the user makes mistakes.
 
 For example:
 - Entering invalid units triggers a ValueError
 - Entering a negative deposit is rejected
 - Invalid starting cash is handled safely
 
-Exception handling ensures the program continues running even when the user makes mistakes.
+3. One limitation of the current implementation is that it supports only one student. A possible improvement would be using additional OOP concepts such as multiple Student objects stored in a list, file saving using persistence This would allow managing multiple students and storing records permanently.
 
-LIMITATION AND POSSIBLE IMPROVEMENT
-
-One limitation of the current implementation is that it supports only one student.
-A possible improvement would be using additional OOP concepts such as:
-- multiple Student objects stored in a list
-- a separate Admin or EnrollmentManager class
-- file saving using persistence
-
-This would allow managing multiple students and storing records permanently.
