@@ -1,10 +1,4 @@
-Explain the overall design of your program and justify why you chose this particular class structure and set of user-defined methods.
-
-Describe how user input is handled in your program and discuss the role of exception handling (try–except) in preventing incorrect or unexpected behavior.
-
-Identify one limitation of your current implementation and explain how it could be improved using additional OOP concepts or better error handling.
-
-1.The program is a Student Enrollment System using OOP concepts. The main class of the program is StudentEnrollement, which is used to store the values and functions for the management of enrollment, tuition and cash balance of the students. By grouping up all the operations into a single class. It improves the program's readability, and reusability.
+1. The program is a Student Enrollment System using OOP concepts. The main class of the program is StudentEnrollement, which is used to store the values and functions for the management of enrollment, tuition and cash balance of the students. By grouping up all the operations into a single class. It improves the program's readability, and reusability.
 
 Class contains the user-defined attributes:
 -cash(Student's balance)
@@ -26,4 +20,5 @@ For example:
 - Invalid starting cash is handled safely
 
 3. One limitation of the current implementation is that it supports only one student. A possible improvement would be using additional OOP concepts such as multiple Student objects stored in a list, file saving using persistence This would allow managing multiple students and storing records permanently.
+
 
